@@ -71,3 +71,10 @@ A injeção de dependência é feita no ServiceCollectionExtensions.cs, mantendo
 - Autenticação e autorização com JWT
 - Testes automatizados com xUnit + Moq
 - Logs e métricas
+
+---
+
+## 📬 Contato
+[Hebrain Lima – LinkedIn](https://www.linkedin.com/in/hebrain-lima/)
+
+Projeto demonstrativo para fins educacionais e profissionais.
