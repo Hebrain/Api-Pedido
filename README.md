@@ -1,6 +1,6 @@
 ## 🧱 Api-Pedido
 
-Este é um projeto exemplo de uma API REST moderna construída com:
+Este é um projeto demonstrativo para fins educacionais e profissionais, exemplo de uma API REST moderna construída com:
 
 - ✅ Clean Architecture (camadas bem definidas)
 - ✅ CQRS (Command Query Responsibility Segregation)
@@ -68,7 +68,8 @@ A injeção de dependência é feita no ServiceCollectionExtensions.cs, mantendo
 ---
 
 ## 📌 Futuras melhorias
-- Autenticação e autorização com JWT
+- Dominio com mais informações
+- Autenticação e autorização com oAuth 2.0
 - Testes automatizados com xUnit + Moq
 - Logs e métricas
 
@@ -76,5 +77,3 @@ A injeção de dependência é feita no ServiceCollectionExtensions.cs, mantendo
 
 ## 📬 Contato
 [Hebrain Lima – LinkedIn](https://www.linkedin.com/in/hebrain-lima/)
-
-Projeto demonstrativo para fins educacionais e profissionais.
