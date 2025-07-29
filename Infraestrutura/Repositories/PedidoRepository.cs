@@ -1,20 +1,22 @@
 ﻿using Application.Interfaces;
 using Domain.Entities;
+using Infraestrutura.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infraestrutura.Repositories
 {
-    public class PedidoRepository : IPedidoRepository
+    public class PedidoRepository(PedidoContext context) : IPedidoRepository
     {
-        private static readonly List<Pedido> _db = new();
+        private readonly PedidoContext _context = context;
 
         // TODO: Transformar método em asyncrono ao conetectar com base
-        public Task Criar(Pedido pedido)
+        public async Task Criar(Pedido pedido)
         {
-            _db.Add(pedido);
-            return Task.CompletedTask;
+            _context.Pedido.Add(pedido);
+            await _context.SaveChangesAsync();
         }
 
         // TODO: Transformar método em asyncrono ao conetectar com base
-        public Task<List<Pedido>> ObterTodos() => Task.FromResult(_db);
+        public async Task<List<Pedido>> ObterTodos() => await _context.Pedido.ToListAsync();
     }
 }
